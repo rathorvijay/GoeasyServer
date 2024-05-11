@@ -1,0 +1,72 @@
+import { ACCOUNT_TYPE } from "../utils/constants";
+export const sidebarLinks = [
+  {
+    id: 1,
+    name: "My Profile",
+    path: "/dashboard/my-profile",
+    icon: "VscAccount",
+  },
+  {
+    id: 2,
+    name: "Dashboard",
+    path: "/dashboard/admin",
+    type: ACCOUNT_TYPE.ADMIN,
+    icon: "VscDashboard",
+  },
+  {
+    id: 3,
+    name: "My Services",
+    path: "/dashboard/my-services",
+    type: ACCOUNT_TYPE.ADMIN,
+    icon: "VscVm",
+  },
+  {
+    id: 3,
+    name: "My Offers",
+    path: "/dashboard/my-offers",
+    type: ACCOUNT_TYPE.ADMIN,
+    icon: "VscVm",
+  },
+  {
+    id: 3,
+    name: "My Category",
+    path: "/dashboard/my-categories",
+    type: ACCOUNT_TYPE.ADMIN,
+    icon: "VscVm",
+  },
+  {
+    id: 4,
+    name: "Add Service",
+    path: "/dashboard/add-service",
+    type: ACCOUNT_TYPE.ADMIN,
+    icon: "VscAdd",
+  },
+  {
+    id: 5,
+    name: "Add Category",
+    path: "/dashboard/add-category",
+    type: ACCOUNT_TYPE.ADMIN,
+    icon: "VscAdd",
+  },
+  {
+    id: 6,
+    name: "Add Offers",
+    path: "/dashboard/add-offer",
+    type: ACCOUNT_TYPE.ADMIN,
+    icon: "VscAdd",
+  },
+  {
+    id: 7,
+    name: "Enrolled Servies",
+    path: "/dashboard/enrolled-services",
+    type: ACCOUNT_TYPE.CUSTOMER,
+    icon: "VscMortarBoard",
+  },
+  {
+    id: 8,
+    name: "Your Cart",
+    path: "/dashboard/cart",
+    type: ACCOUNT_TYPE.CUSTOMER,
+    icon: "VscHistory",
+  },
+];
