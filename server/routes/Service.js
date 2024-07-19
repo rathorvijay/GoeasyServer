@@ -55,7 +55,7 @@ const {
 const { auth, isVendor, isCustomer, isAdmin } = require("../middlewares/auth")
 
 // ********************************************************************************************************
-//                                      Course routes
+//                                      Server routes
 // ********************************************************************************************************
 
 router.post("/createService", auth, isAdmin, createService)
@@ -68,7 +68,7 @@ router.delete("/deleteService", deleteService)
 router.post("/updateServiceProgress", auth, isCustomer, updateServiceProgress);
 
 // ********************************************************************************************************
-//                                      Offer routes
+//                                      Offer routes (only by Admin)
 // ********************************************************************************************************
 
 router.post("/createOffer", auth, isAdmin, createOffer)

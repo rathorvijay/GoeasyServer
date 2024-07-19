@@ -3,6 +3,7 @@ const app = express();
 
 const userRoutes = require("./routes/User");
 const profileRoutes = require("./routes/Profile");
+const vendorRoutes = require("./routes/Vendor");
 const paymentRoutes = require("./routes/Payments");
 const serviceRoutes = require("./routes/Service");
 const contactUsRoute = require("./routes/Contact");
@@ -45,6 +46,7 @@ cloudinaryConnect();
 
 //routes
 app.use("/api/v1/auth", userRoutes);
+app.use("/api/v1/vendor",vendorRoutes);
 app.use("/api/v1/profile", profileRoutes);
 app.use("/api/v1/service", serviceRoutes);
 app.use("/api/v1/payment", paymentRoutes);
